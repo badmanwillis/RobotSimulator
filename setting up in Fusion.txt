@@ -1,0 +1,5 @@
+In order to accommodate the script, both in its original form and in the second version, certain changes need to be made:
+1) the root of the hierarchy of the robot needs to be called base\_link.
+2) for the first version of script, all the bodies of the components need to be in the top components, and no included components will be exported. This is fixed in the second version.
+3) the joints must not be rigid, as they will be ignored. If a joint is needed to be rigid, you have to move those components into a single top components, so they are exported as a single mesh.
+4) ALL joints must be part of the top design components, no joints between lower level components will be exported. As such, the developer needs to move all the components from their hierarchy into the top level design, realign them, replace the joints and their limits, then exporting can be done. ANY joint between 2 components that are part of a larger component instead of the top level design will be generated as part of that larger component, and ignored by the exporting script.
