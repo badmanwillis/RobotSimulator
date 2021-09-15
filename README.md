@@ -17,6 +17,7 @@ TLDR of the project:
 3) use the urdf to proto script: https://github.com/cyberbotics/urdf2webots
 4) then simply start WeBots and import the proto file.
 
+Install F360 Script on your Windows machine, to generate the ROS package with your CAD model setup as a URDF.
 (In windows)
 1 Download zip folder fusion2urdf from github page
 1.2 Copy URDF_Exporter to the Desktop
